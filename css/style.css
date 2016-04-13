@@ -1,0 +1,324 @@
+/* @import url('fonts.css'); */
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width : 992px){ 
+	.portfolio_section div[class*="col-sm-6"]:nth-child(2n+1){
+		clear: left;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.portfolio_section div[class*="col-md-4"]:nth-child(3n+1){
+		clear: left;
+	}
+}
+
+
+/* -- General rules -- */
+body{
+	font-family: FiraSans, Verdana, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	position:relative;
+	padding-top:75px;
+	transition: 0.5s ease-out;	
+}
+
+h1{
+	font-size: 42px;
+	font-weight: 500;
+	color: #212121;
+	margin:0 0 1em 0;
+	text-transform: uppercase;
+}
+/* -- /General rules -- */
+
+h1 + p{
+	text-transform: uppercase;
+}
+
+/* -- Navigation bar rules -- */
+.navbar{
+	background-color: #8cc34b;
+	/* height: 90px; */
+	box-shadow: 0 0 15px #000;
+}
+
+.navbar-default{
+	border-color:#8cc34b;
+	color: #fff;
+}
+
+#navbar-collapse{
+	padding: 10px 0;
+	overflow: hidden;
+}
+
+.navbar .profile img{
+	margin:2px;
+    width: 50px;
+    border: 1px solid #fff;
+    display: inline-block;
+    float: left;
+}
+
+.navbar .name_site{
+	margin:2px 0;
+	display: inline-block;
+    float: left;
+    color: #fff;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 21px;
+	margin-left: 15px;
+}
+
+.name_site .name{
+    margin: 2.5px 0 -5px 0;
+}
+
+.name_site .site{
+	font-size: 14px;
+	font-weight:normal;
+	opacity: 0.7;
+}
+
+.nav>li>a,
+.navbar-nav>li>a{
+	padding:0 15px;
+	margin:2px;
+	line-height:50px;
+	height:50px;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:focus{
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+	font-size: 16px;
+	transition: 0.25s ease-out 0.1s;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>li>a:hover{
+	background-color: #8cc34b;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+}
+
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #212121;
+}
+
+.navbar-default .navbar-toggle{
+	border-color:#fff;
+	transition: 0.25s ease-out 0.1s;
+}
+
+.navbar-default .navbar-toggle:hover{
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-default .navbar-toggle:focus{
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #fff;
+	transition: 0.25s ease-out 0.1s;
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar{
+	background-color: #212121;	
+}
+/* -- /Navigation bar rules -- */
+
+
+/* -- General rules for sections -- */
+.student_section,
+.portfolio_section,
+.contact_section{
+	text-align: center;
+	padding: 70px 0;
+}
+
+.student_section p,
+.portfolio_section p,
+.contact_section p{
+	/* font-weight: 200; */
+	font-size: 21px;
+	color: #727272;
+	margin-bottom:1em;
+}
+
+.info h3{
+	font-weight: normal;
+	font-size: 21px;
+	margin-top: 0;
+	color: #212121;
+}
+
+.info p{
+	/* font-weight: 200; */
+	font-size: 14px;
+	color: #727272;
+}
+/* -- /General rules for sections -- */
+
+
+
+/* -- Student section rules -- */
+.student_section>.row{
+	text-align:left;
+}
+
+.student_section>.row div[class^="col"]{
+	margin:15px 0;
+}
+
+.student_section>.row div[class^="col-"]:nth-child(3n+1){
+	text-align:right;
+}
+
+.student_section .img-responsive{
+	display:inline;
+}
+
+.student_section .info a,
+.student_section .info a:hover,
+.student_section .info a:focus{
+	color: #03a9f4;
+}
+/* -- /Student section rules -- */
+
+
+/* -- Portfolio section rules -- */
+body>.container-fluid:nth-child(3n){
+	background: #f6f7f2 url('../images/gplaypattern.png');
+	/* margin: 0 -15px; */
+}
+.portfolio_section{	
+	/* margin: 0 15px; */
+}
+
+.portfolio_section .container .row{
+	display:inline-block;
+	text-align:center;
+}
+
+.portfolio_section div[class^="col-"] a{
+	text-decoration: none;
+	color: currentColor;
+}
+
+.work_thumbnail{
+	display: inline-block;
+	float: left;
+	margin: 0 10px;
+	text-align: left;
+	box-shadow: 0 3px 3px #B5B5B5;
+	position:relative;
+	text-decoration: none;
+	margin-bottom: 5%;
+}
+
+.work_thumbnail a:hover .image{
+	border-bottom: 5px solid #8cc34b;
+	height: 150px;
+}
+
+.work_thumbnail a:hover h3{
+	color: #8cc34b;
+}
+
+.work_thumbnail a:hover .duration{
+	color: #8cc34b;
+}
+
+.work_thumbnail .image{
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+}
+
+.work_thumbnail img{
+	width: 100%;
+	max-width: 100%;
+}
+
+.work_thumbnail .info{
+	background-color: #f6f7f2;
+	padding: 20px;
+	transition: 0.3s linear;
+}
+
+.work_thumbnail a:hover .info{
+	background-color: #fff;
+}
+/* -- /Portfolio section rules -- */
+
+
+/* -- Contact section rules -- */
+.contact_section{
+	/* background-color:#f6f7f2; */
+	min-height: 500px;
+}
+
+.contact_section .row{
+	margin-top:100px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.contact_section .row svg{
+	vertical-align: middle;
+}
+
+.git g path, .skype g path, .facebook g path{
+	fill: #212121;
+	opacity: 0.7;
+}
+
+.git:hover g path,
+.skype:hover g path,
+.facebook:hover g path{
+	fill: #8cc34b;
+	opacity: 1;
+}
+/* -- /Contact section rules -- */
+
+
+/* -- Footer rules -- */
+body .container-fluid:nth-child(5n){
+	background-color:#f6f7f2;
+}
+
+footer{
+	text-align:center;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #212121;
+	border-top: 1px #f6f7f2 solid;
+	
+}
+
+footer p{
+	margin:0;
+	padding: 15px 0;
+}
+
+footer p a,
+footer p a:hover,
+footer p a:focus{
+	color: #03a9f4;
+}
+/* -- /Footer rules -- */
